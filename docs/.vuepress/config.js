@@ -1,5 +1,5 @@
 module.exports = {
-  title: "finDream",
+  title: "findream",
   description: "不积硅步，无以至千里,前端，node.js,webpack,mongodb,express",
   // 网站部署的路径
   // base: "/blog/",
