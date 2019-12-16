@@ -1,0 +1,27 @@
+{
+  "name": "224137748.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/224137748/224137748.github.io.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/224137748/224137748.github.io/issues"
+  },
+  "homepage": "https://github.com/224137748/224137748.github.io#readme",
+  "devDependencies": {
+    "vuepress": "^1.2.0"
+  }
+}
