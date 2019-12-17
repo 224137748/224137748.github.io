@@ -42,6 +42,10 @@ module.exports = {
     // 自动生成侧边栏
     // sidebar: "auto",
     sidebar: {
+      "/css/": [
+        ["", "揭秘 CSS"],
+        ["css_01_黑魔法", "CSS 黑魔法"]
+      ],
       "/javascript/": [
         ["", "Javascript"],
         "01_基础知识",
