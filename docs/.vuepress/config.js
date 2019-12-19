@@ -93,7 +93,11 @@ module.exports = {
       "/node/": [
         ["", "Node.js"],
         ["node_01_初识", "Node.js初识"],
-        ["node_02_模板引擎", "模板引擎"]
+        ["node_02_模板引擎", "模板引擎"],
+        ["node_03_后端介绍", "后端介绍"],
+        ["node_04_http协议", "http 协议"],
+        ["node_05_cookie和session", "cookie与session"],
+        ["node_06_redis", "redis"]
       ],
       "/typescript/": [
         ["", "TypeScript"],

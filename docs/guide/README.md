@@ -54,6 +54,9 @@
 
 - [Node.js 初识](/node/node_01_初识)
 - [模板引擎](/node/node_02_模板引擎)
+- [后端介绍](/node/node_03_后端介绍)
+- [http 协议](/node/node_04_http协议)
+- [cookie、session](/node/node_05_cookie和session.md)
 
 ## [Mongodb](/mongodb/)
 
