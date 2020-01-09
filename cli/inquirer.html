@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>inquirer.js | findream</title>
+    <meta name="description" content="不积硅步，无以至千里,前端，node.js,webpack,mongodb,express">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.5c5863ed.css" as="style"><link rel="preload" href="/assets/js/app.173b9c16.js" as="script"><link rel="preload" href="/assets/js/2.4e80b801.js" as="script"><link rel="preload" href="/assets/js/8.c09fe4d3.js" as="script"><link rel="prefetch" href="/assets/js/10.db2cb67d.js"><link rel="prefetch" href="/assets/js/11.82fa9fe4.js"><link rel="prefetch" href="/assets/js/12.190854a5.js"><link rel="prefetch" href="/assets/js/13.ed43c6a3.js"><link rel="prefetch" href="/assets/js/14.6afa8694.js"><link rel="prefetch" href="/assets/js/15.179b8ce0.js"><link rel="prefetch" href="/assets/js/16.bea1bbd7.js"><link rel="prefetch" href="/assets/js/17.a0d9aa14.js"><link rel="prefetch" href="/assets/js/18.bbcd1f91.js"><link rel="prefetch" href="/assets/js/19.db614af8.js"><link rel="prefetch" href="/assets/js/20.a80ecd6a.js"><link rel="prefetch" href="/assets/js/21.3d2d3713.js"><link rel="prefetch" href="/assets/js/22.4a9a9b95.js"><link rel="prefetch" href="/assets/js/23.cfef4751.js"><link rel="prefetch" href="/assets/js/24.b696d55d.js"><link rel="prefetch" href="/assets/js/25.8b8fa1ff.js"><link rel="prefetch" href="/assets/js/26.086abc6d.js"><link rel="prefetch" href="/assets/js/27.72247f39.js"><link rel="prefetch" href="/assets/js/28.5cc3983d.js"><link rel="prefetch" href="/assets/js/29.c6a53f2d.js"><link rel="prefetch" href="/assets/js/3.2980a8e2.js"><link rel="prefetch" href="/assets/js/30.1784b618.js"><link rel="prefetch" href="/assets/js/31.f6553ffd.js"><link rel="prefetch" href="/assets/js/32.838f3dc8.js"><link rel="prefetch" href="/assets/js/33.f9ead0ce.js"><link rel="prefetch" href="/assets/js/34.9a5a8f06.js"><link rel="prefetch" href="/assets/js/35.5d690f27.js"><link rel="prefetch" href="/assets/js/36.885362ff.js"><link rel="prefetch" href="/assets/js/37.8d865559.js"><link rel="prefetch" href="/assets/js/38.4452af43.js"><link rel="prefetch" href="/assets/js/39.e5085be3.js"><link rel="prefetch" href="/assets/js/4.d9d34a91.js"><link rel="prefetch" href="/assets/js/40.f8c18109.js"><link rel="prefetch" href="/assets/js/41.09e6c1a5.js"><link rel="prefetch" href="/assets/js/42.8b661c8a.js"><link rel="prefetch" href="/assets/js/43.eb655c98.js"><link rel="prefetch" href="/assets/js/44.8efd90d3.js"><link rel="prefetch" href="/assets/js/45.97814cde.js"><link rel="prefetch" href="/assets/js/46.a4ec33fb.js"><link rel="prefetch" href="/assets/js/47.8345cdf1.js"><link rel="prefetch" href="/assets/js/48.86f00f5d.js"><link rel="prefetch" href="/assets/js/49.019c6fc7.js"><link rel="prefetch" href="/assets/js/5.9cc7f0fa.js"><link rel="prefetch" href="/assets/js/50.c2d204ff.js"><link rel="prefetch" href="/assets/js/51.44bffdda.js"><link rel="prefetch" href="/assets/js/52.0fc9bc6a.js"><link rel="prefetch" href="/assets/js/53.f600385f.js"><link rel="prefetch" href="/assets/js/54.933ebe6d.js"><link rel="prefetch" href="/assets/js/55.35bfdfa1.js"><link rel="prefetch" href="/assets/js/56.41690f00.js"><link rel="prefetch" href="/assets/js/57.19f3b8ff.js"><link rel="prefetch" href="/assets/js/58.cdf962dc.js"><link rel="prefetch" href="/assets/js/59.5c94183d.js"><link rel="prefetch" href="/assets/js/6.bd40f757.js"><link rel="prefetch" href="/assets/js/60.d32cadbc.js"><link rel="prefetch" href="/assets/js/61.b4a5edd6.js"><link rel="prefetch" href="/assets/js/62.87a09118.js"><link rel="prefetch" href="/assets/js/63.a0292159.js"><link rel="prefetch" href="/assets/js/64.a0c783a5.js"><link rel="prefetch" href="/assets/js/65.fd24ffa7.js"><link rel="prefetch" href="/assets/js/66.3f9f3319.js"><link rel="prefetch" href="/assets/js/67.7609e106.js"><link rel="prefetch" href="/assets/js/68.7c203c83.js"><link rel="prefetch" href="/assets/js/69.7c9e0b59.js"><link rel="prefetch" href="/assets/js/7.34793ec0.js"><link rel="prefetch" href="/assets/js/70.e02e2a22.js"><link rel="prefetch" href="/assets/js/71.00e0ae13.js"><link rel="prefetch" href="/assets/js/72.03b7188c.js"><link rel="prefetch" href="/assets/js/73.8d6ac368.js"><link rel="prefetch" href="/assets/js/74.c3a9a7c3.js"><link rel="prefetch" href="/assets/js/75.95a06956.js"><link rel="prefetch" href="/assets/js/76.e5d629dd.js"><link rel="prefetch" href="/assets/js/77.1a4c4da6.js"><link rel="prefetch" href="/assets/js/78.2ffffe97.js"><link rel="prefetch" href="/assets/js/9.591c91d8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5c5863ed.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/imgs/avatar.jpg" alt="findream" class="logo"> <span class="site-name can-hide">findream</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/guide/" class="nav-link">概览</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="类别" class="dropdown-title"><span class="title">类别</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">Css</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----> <a href="/typescript/" class="nav-link">Typescript·</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">Vue</a></li><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">Mongodb</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">Mysql</a></li><li class="dropdown-item"><!----> <a href="/cli/" class="nav-link router-link-active">Cli</a></li></ul></div></div> <a href="https://github.com/224137748/224137748.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/guide/" class="nav-link">概览</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="类别" class="dropdown-title"><span class="title">类别</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">Css</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">Javascript</a></li><li class="dropdown-item"><!----> <a href="/typescript/" class="nav-link">Typescript·</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">Vue</a></li><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">Node.js</a></li><li class="dropdown-item"><!----> <a href="/mongodb/" class="nav-link">Mongodb</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">Mysql</a></li><li class="dropdown-item"><!----> <a href="/cli/" class="nav-link router-link-active">Cli</a></li></ul></div></div> <a href="https://github.com/224137748/224137748.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/cli/" class="sidebar-link">Cli</a></li><li><a href="/cli/Commander.html" class="sidebar-link">Commander</a></li><li><a href="/cli/inquirer.html" class="active sidebar-link">inquirer</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/cli/inquirer.html#介绍" class="sidebar-link">介绍</a></li><li class="sidebar-sub-header"><a href="/cli/inquirer.html#具体使用" class="sidebar-link">具体使用</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="inquirer-js"><a href="#inquirer-js" class="header-anchor">#</a> inquirer.js</h1> <p>公共交互命令行用户界面的集合。现在大多数工程都是通过脚手架来创建的，使用脚手架的时候最明显的就是与命令行的交互，如果想自己做一个脚手架或者在某些时候要与用户进行交互，这个时候就不得不提到<code>inquirer.js</code>了。</p> <h2 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h2> <p>由于交互的问题种类不同，<code>inquirer</code>为每个问题提供很多参数：</p> <ul><li><p><code>type</code>：表示提问的类型，包括：<code>input</code>,<code>confirm</code>, <code>list</code>, <code>rawlist</code>, <code>expand</code>, <code>checkbox</code>, <code>password</code>, <code>editor</code>；</p></li> <li><p><code>name</code>： 存储当前问题回答的变量；</p></li> <li><p><code>message</code>：问题的描述；</p></li> <li><p><code>default</code>：默认值；</p></li> <li><p><code>when</code>：属性值为一个函数，返回值是一个<code>boolean</code>值，根据前面问题的回答，判断当前问题是否需要被回答；</p></li> <li><p><code>choices</code>：列表项，在有些<code>type</code>下可用，并且包含一个分隔符；</p></li> <li><p><code>validate</code>：对用户的回答进行校验；</p></li> <li><p><code>filter</code>：对用户的回答进行过滤处理，返回处理后的值；</p></li> <li><p><code>transformer</code>：对用户回答的显示效果进行处理(如：修改回答的字体或背景颜色)，但不会影响最终的答案的内容；</p></li> <li><p><code>pageSize</code>：修改某些 type 类型下的渲染行数；</p></li> <li><p><code>prefix</code>：修改 message 默认前缀；</p></li> <li><p><code>suffix</code>：修改 message 默认后缀。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'position'</span><span class="token punctuation">,</span>
+    type<span class="token punctuation">:</span> <span class="token string">'list'</span><span class="token punctuation">,</span>
+    when<span class="token punctuation">:</span> hasThisPlugin<span class="token punctuation">,</span>
+	choices<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;zt/2019&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;zt&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;p&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;t&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div></li></ul> <h2 id="具体使用"><a href="#具体使用" class="header-anchor">#</a> 具体使用</h2> <h3 id="_1-语法结构"><a href="#_1-语法结构" class="header-anchor">#</a> 1. 语法结构</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> inquirer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;inquirer&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> promptList <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token comment">// 具体交互内容</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+inquirer<span class="token punctuation">.</span><span class="token function">prompt</span><span class="token punctuation">(</span>promptList<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">answers</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>answers<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="_2-input-类型"><a href="#_2-input-类型" class="header-anchor">#</a> 2. input 类型</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> promptList <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;userName&quot;</span><span class="token punctuation">,</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;input&quot;</span><span class="token punctuation">,</span>
+    message<span class="token punctuation">:</span> <span class="token string">&quot;请输入一个用户名&quot;</span><span class="token punctuation">,</span>
+    <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">&quot;test_ueser&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;phone&quot;</span><span class="token punctuation">,</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;input&quot;</span><span class="token punctuation">,</span>
+    message<span class="token punctuation">:</span> <span class="token string">&quot;请输入您的手机号&quot;</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">validate</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>val<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex">/\d{11}/g</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 校验位数</span>
+        <span class="token keyword">return</span> val<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> <span class="token string">&quot;请输入11位数字！！&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>效果：</p> <p><img src="/imgs/cli/inquirer1.png" alt=""></p> <h3 id="_3-confirm-类型"><a href="#_3-confirm-类型" class="header-anchor">#</a> 3. confirm 类型</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> promptList <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;isMan&quot;</span><span class="token punctuation">,</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;confirm&quot;</span><span class="token punctuation">,</span>
+    message<span class="token punctuation">:</span> <span class="token string">&quot;你是男生吗？&quot;</span><span class="token punctuation">,</span>
+    prefix<span class="token punctuation">:</span> <span class="token string">&quot;hey~! 朋友：&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;isknow_TokyoHot&quot;</span><span class="token punctuation">,</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;confirm&quot;</span><span class="token punctuation">,</span>
+    message<span class="token punctuation">:</span> <span class="token string">&quot;你知道东京热吗？&quot;</span><span class="token punctuation">,</span>
+    suffix<span class="token punctuation">:</span> <span class="token string">&quot;  哈哈~！&quot;</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">when</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">answer</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> answer<span class="token punctuation">.</span>isMan<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>效果：</p> <p><img src="/imgs/cli/inquirer2.png" alt=""></p> <h3 id="_4-list-类型"><a href="#_4-list-类型" class="header-anchor">#</a> 4. list 类型</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> promptList <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;favorite_fruit&quot;</span><span class="token punctuation">,</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;list&quot;</span><span class="token punctuation">,</span>
+    message<span class="token punctuation">:</span> <span class="token string">&quot;您最喜欢的水果是？&quot;</span><span class="token punctuation">,</span>
+    choices<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;Apple&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Pear&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Banana&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">filter</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 使用filter将回答变为小写</span>
+      <span class="token keyword">return</span> val<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>效果：</p> <p><img src="/imgs/cli/inquirer3.png" alt=""></p> <p><img src="/imgs/cli/inquirer3_1.png" alt=""></p> <h3 id="_5-rawlist-类型"><a href="#_5-rawlist-类型" class="header-anchor">#</a> 5. rawlist 类型</h3> <div class="language- extra-class"><pre class="language-text"><code>const promptList = [{
+	name: 'favorite_fruit',
+	type: 'rawlist',
+	message: '您最喜欢的水果是?',
+	choices: ['Apple', 'Pear', 'Banana'],
+}]
+</code></pre></div><p>效果：</p> <p><img src="/imgs/cli/inquirer4.png" alt=""></p> <p><img src="/imgs/cli/inquirer4_1.png" alt=""></p> <h3 id="_6-expand-类型"><a href="#_6-expand-类型" class="header-anchor">#</a> 6. expand 类型</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> promptList <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;expand&quot;</span><span class="token punctuation">,</span>
+    message<span class="token punctuation">:</span> <span class="token string">&quot;请选择一种水果：&quot;</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;fruit&quot;</span><span class="token punctuation">,</span>
+    choices<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        key<span class="token punctuation">:</span> <span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span>
+        name<span class="token punctuation">:</span> <span class="token string">&quot;Apple&quot;</span><span class="token punctuation">,</span>
+        value<span class="token punctuation">:</span> <span class="token string">&quot;apple&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        key<span class="token punctuation">:</span> <span class="token string">&quot;O&quot;</span><span class="token punctuation">,</span>
+        name<span class="token punctuation">:</span> <span class="token string">&quot;Orange&quot;</span><span class="token punctuation">,</span>
+        value<span class="token punctuation">:</span> <span class="token string">&quot;orange&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        key<span class="token punctuation">:</span> <span class="token string">&quot;p&quot;</span><span class="token punctuation">,</span>
+        name<span class="token punctuation">:</span> <span class="token string">&quot;Pear&quot;</span><span class="token punctuation">,</span>
+        value<span class="token punctuation">:</span> <span class="token string">&quot;pear&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>效果：</p> <p><img src="/imgs/cli/inquirer5.png" alt=""></p> <p><img src="/imgs/cli/inquirer5_1.png" alt=""></p> <p><img src="/imgs/cli/inquirer5_2.png" alt=""></p> <h3 id="_7-checkbox-类型"><a href="#_7-checkbox-类型" class="header-anchor">#</a> 7. checkbox 类型</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> promptList <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;checkbox&quot;</span><span class="token punctuation">,</span>
+    message<span class="token punctuation">:</span> <span class="token string">&quot;选择颜色:&quot;</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;color&quot;</span><span class="token punctuation">,</span>
+    choices<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span> <span class="token string">&quot;red&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token keyword">new</span> <span class="token class-name">inquirer<span class="token punctuation">.</span>Separator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// 添加分隔符</span>
+      <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span> <span class="token string">&quot;blur&quot;</span><span class="token punctuation">,</span>
+        checked<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token comment">// 默认选中</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span> <span class="token string">&quot;green&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token keyword">new</span> <span class="token class-name">inquirer<span class="token punctuation">.</span>Separator</span><span class="token punctuation">(</span><span class="token string">&quot;--- 分隔符 ---&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// 自定义分隔符</span>
+      <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span> <span class="token string">&quot;yellow&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">// 或者下面这样</span>
+<span class="token keyword">const</span> promptList <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;checkbox&quot;</span><span class="token punctuation">,</span>
+    message<span class="token punctuation">:</span> <span class="token string">&quot;选择颜色:&quot;</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;color&quot;</span><span class="token punctuation">,</span>
+    choices<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;red&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;blur&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;green&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;yellow&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    pageSize<span class="token punctuation">:</span> <span class="token number">2</span> <span class="token comment">// 设置行数</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>效果：</p> <p><img src="/imgs/cli/inquirer6.png" alt=""></p> <p><img src="/imgs/cli/inquirer6_1.png" alt=""></p> <h3 id="_8-password-类型"><a href="#_8-password-类型" class="header-anchor">#</a> 8. password 类型</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> promptList <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;password&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 密码为密文输入</span>
+    message<span class="token punctuation">:</span> <span class="token string">&quot;请输入密码：&quot;</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;pwd&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>效果：</p> <p><img src="/imgs/cli/inquirer7.png" alt=""></p> <h3 id="_9-editor-类型"><a href="#_9-editor-类型" class="header-anchor">#</a> 9.editor 类型</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> promptList <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">&quot;editor&quot;</span><span class="token punctuation">,</span>
+    message<span class="token punctuation">:</span> <span class="token string">&quot;请输入备注：&quot;</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;editor&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>效果：</p> <p><img src="/imgs/cli/inquirer8.png" alt=""></p> <p><img src="/imgs/cli/inquirer8_1.png" alt=""></p> <p><img src="/imgs/cli/inquirer8_2.png" alt=""></p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/224137748/224137748.github.io/edit/document/docs/cli/inquirer.md" target="_blank" rel="noopener noreferrer">编辑</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">12/16/2019, 9:44:11 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/cli/Commander.html" class="prev">Commander</a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.173b9c16.js" defer></script><script src="/assets/js/2.4e80b801.js" defer></script><script src="/assets/js/8.c09fe4d3.js" defer></script>
+  </body>
+</html>
